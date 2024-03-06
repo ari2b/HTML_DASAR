@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Div dan Span</title>
+    <link rel="icon" type="img/png" href="poltek.png" sizes="16x16" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div id="content"> <!--content--> 
+        <h1>-Form Pendaftaran Mahasiswa Baru</h1>
+  <form action="proses.php" method="post" enctype="multipart/form-data">
+  <label for="nama_lengkap">Nama Lengkap:</label><br>
+  <input type="text" id="nama_lengkap" name="nama_lengkap" required><br>
+
+  <label for="tempat_tanggal_lahir">Tempat Tanggal Lahir:</label><br>
+  <input type="text" id="tempat_tanggal_lahir" name="tempat_tanggal_lahir" placeholder="DD-MM-YYYY" pattern="(0[1-9]|[12][0-9]|3[01])-(0[1-9]|1[012])-[1-2][0-9]{3}" required><br>
+
+  <label for="agama">Agama:</label><br>
+  <input type="text" id="agama" name="agama" list="agama_list" required><br>
+  <datalist id="agama_list">
+      <option value="Islam">
+      <option value="Kristen">
+      <option value="Katolik">
+      <option value="Hindu">
+      <option value="Budha">
+      <option value="Konghucu">
+  </datalist>
+
+  <label for="jenis_kelamin">Jenis Kelamin:</label><br>
+  <select id="jenis_kelamin" name="jenis_kelamin" required>
+      <option value="">-PILIH-</option>
+      <option value="Laki-laki">Laki-laki</option>
+      <option value="Perempuan">Perempuan</option>
+  </select><br>
+
+  <label for="no_ijazah_sma_ma">No. Ijazah SMA/MA:</label><br>
+  <input type="text" id="no_ijazah_sma_ma" name="no_ijazah_sma_ma" required><br>
+
+  <label for="foto">Foto (Ukuran File Maks. 20 KB):</label><br>
+  <input type="file" id="foto" name="foto" accept="image/*" required><br>
+
+  <label for="nama_ayah">Nama Ayah:</label><br>
+  <input type="text" id="nama_ayah" name="nama_ayah" required><br>
+
+  <label for="nama_ibu">Nama Ibu:</label><br>
+  <input type="text" id="nama_ibu" name="nama_ibu" required><br>
+
+  <label for="alamat_rumah">Alamat Rumah:</label><br>
+  <input type="text" id="alamat_rumah" name="alamat_rumah" required><br>
+
+  <label for="no_telp">No. Telp:</label><br>
+  <input type="text" id="no_telp" name="no_telp" required><br>
+
+  <label for="nama_sekolah_asal">Nama Sekolah Asal:</label><br>
+  <input type="text" id="nama_sekolah_asal" name="nama_sekolah_asal" required><br>
+
+  <label for="alamat_sekolah_asal">Alamat Sekolah Asal:</label><br>
+  <input type="text" id="alamat_sekolah_asal" name="alamat_sekolah_asal" required><br>
+  <input type="submit" value="DAFTAR">
+  <input type="reset" value="BATAL">
+  </div>
+</div>
+</body>
